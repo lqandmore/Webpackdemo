@@ -1,4 +1,6 @@
 import "./css/style.css"
+import "./css/personal.scss"
+import "./less/main.less"
 
 function component() {
   const element = document.createElement('div')
@@ -7,4 +9,14 @@ function component() {
   return element;
 }
 
+function component2() {
+  const element = document.createElement('div')
+  element.innerHTML = ["hello", "moto"].join(" ")
+  // element.className = "block"
+  element.classList.add(...["block", "content"])
+
+  return element;
+}
+
 document.body.appendChild(component())
+document.body.appendChild(component2())
