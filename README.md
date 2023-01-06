@@ -26,7 +26,7 @@ module.exports = {
 ```
 
 可以使用`webpack --config xx.config.js`命令来指定webpack的配置文件。
-```
+```  --language:javascript
 {
 //...
   "scripts":{
