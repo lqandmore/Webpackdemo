@@ -33,6 +33,14 @@ function component4() {
 
   return element;
 }
+function component5() {
+  const element = document.createElement('div')
+  element.innerHTML = ["hello", "moto"].join(" ")
+  // element.className = "block"
+  element.classList.add(...["block", "content"])
+
+  return element;
+}
 
 document.body.appendChild(component())
 document.body.appendChild(component2())
