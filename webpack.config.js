@@ -33,10 +33,13 @@ module.exports = {
 
         ]
       },
-      {
-        test:/\.(jpe?g | png | svg | gif)$/,
-        use: ["file-loader"]
-      }
+      // {
+      //   test:/\.(jpe?g|png|svg|gif)$/,
+      //   type: "asset",
+      //   generator: {
+      //     filename: "img/[name]_[hash:6][ext]"
+      //   },
+      // }
     ]
   }
 }
