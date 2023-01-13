@@ -3,3 +3,8 @@
   font-weight: 800;
   font-size:  50px;
 }
+
+.bg-image {
+  background-image: url('../img/hywc.jpeg');
+  background-size: contain;
+}

@@ -19,10 +19,11 @@ function component2() {
 }
 function component3() {
   const element = document.createElement('div')
-  element.innerHTML = ["hello", "moto"].join(" ")
-  // element.className = "block"
-  element.classList.add(...["block", "content"])
-
+  element.style.width = 200+ 'px';
+  element.style.height = 200 + "px";
+  element.style.display = 'inline-block';
+  element.className = 'bg-image';
+  element.style.backgroundColor = 'red';
   return element;
 }
 function component4() {
@@ -52,3 +53,4 @@ function component6() {
 
 document.body.appendChild(component())
 document.body.appendChild(component2())
+document.body.appendChild(component3())

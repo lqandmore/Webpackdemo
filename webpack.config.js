@@ -21,7 +21,6 @@ module.exports = {
           "style-loader",
           "css-loader",
           "sass-loader"
-
         ]
       },
       {
@@ -33,6 +32,10 @@ module.exports = {
           "less-loader"
 
         ]
+      },
+      {
+        test:/\.(jpe?g | png | svg | gif)$/,
+        use: ["file-loader"]
       }
     ]
   }
