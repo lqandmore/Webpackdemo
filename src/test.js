@@ -2,6 +2,7 @@ import "./css/style.css"
 import "./css/personal.scss"
 import "./less/main.less"
 import mht from './img/mht.jpg'
+import "./font/iconfont.css"
 
 function component() {
   const element = document.createElement('div')
@@ -16,7 +17,12 @@ function component2() {
   // element.className = "block"
   element.classList.add(...["block", "content"])
 
-  return element;
+
+
+
+
+
+  return element;;;
 }
 function component3() {
   const element = document.createElement('div')
@@ -33,11 +39,10 @@ function component4() {
   return element;
 }
 function component5() {
-  const element = document.createElement('div')
-  element.innerHTML = ["hello", "moto"].join(" ")
-  // element.className = "block"
-  element.classList.add(...["block", "content"])
-
+  const element = document.createElement('i')
+  element.style.width = 20+ 'px';
+  element.style.height = 20 + "px";
+  element.className = "iconfont icon-Dyanjing"
   return element;
 }
 function component6() {
@@ -53,3 +58,5 @@ document.body.appendChild(component())
 document.body.appendChild(component2())
 document.body.appendChild(component3())
 document.body.appendChild(component4())
+document.body.appendChild(component5())
+
