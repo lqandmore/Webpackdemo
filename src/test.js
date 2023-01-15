@@ -1,6 +1,7 @@
 import "./css/style.css"
 import "./css/personal.scss"
 import "./less/main.less"
+import mht from './img/mht.jpg'
 
 function component() {
   const element = document.createElement('div')
@@ -28,8 +29,7 @@ function component3() {
 }
 function component4() {
   const element = document.createElement('img')
-  // element.src = 
-
+  element.src = mht
   return element;
 }
 function component5() {
@@ -52,3 +52,4 @@ function component6() {
 document.body.appendChild(component())
 document.body.appendChild(component2())
 document.body.appendChild(component3())
+document.body.appendChild(component4())
